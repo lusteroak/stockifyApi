@@ -1,3 +1,20 @@
 spring:
   application:
     name: stockifyApi
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DBNAME}
+    username: ${DBUSER}
+    password: ${DBPASS}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
