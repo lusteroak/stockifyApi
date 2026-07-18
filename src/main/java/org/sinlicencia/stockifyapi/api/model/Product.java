@@ -17,7 +17,7 @@ public class Product {
     private String productCategory;
     private double productPrice;
     private int productQuantity;
-    private boolean isAvailable;
+    private boolean isAvailable = false;
 
     public Product() {
     }
